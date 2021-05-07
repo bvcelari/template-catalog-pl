@@ -26,7 +26,6 @@ pipeline {
   parameters {
         string(name: 'a_different_param', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
     }
-  options { buildDiscarder(logRotator(numToKeepStr: '4')) }
     agent any
     stages {
         stage('Example') {
