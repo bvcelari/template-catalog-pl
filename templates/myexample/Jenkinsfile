@@ -36,6 +36,7 @@ pipeline {
         stage('Example') {
             steps {
                 echo "Hello ${params.a_different_param}"
+                sh "sleep 130"
             }
         }
     }
